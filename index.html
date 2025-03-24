@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en"></html>
+        <ol type="I">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <img src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg" alt="Online Image" width="600" height="400">
+        <br>
+        <table border="1">
+            <tr>
+              <th>Name</th>
+              <th>Address</th>
+              <th>Mobile</th>
+              <th>Email</th>
+            </tr>
+            <tr>
+              <td>Abraham Mokaya</td>
+              <td>P.O. Box 4550-40200, KISII</td>
+              <td>+254 702 567 890</td>
+              <td>abramokaya2@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Jane Nekesa</td>
+              <td>P.O. Box 437 - 50200 BUNGOMA</td>
+              <td>+254 756 385 206</td>
+              <td>jane.nekesa@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Mike Johnson</td>
+              <td>P.O. Box 4-10400, NANYUKI,</td>
+              <td>+254 171 695 290</td>
+              <td>mike.johnson@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Emily Adhiambo</td>
+              <td>P.O. Box 469 - 40300, HOMA BAY</td>
+              <td>+254 708 468 385</td>
+              <td>emily.adhiambo3@example.com</td>
+            </tr>
+            <tr>
+              <td>David Wambua</td>
+              <td>P.O. Box 1996-90100, MACHAKOS</td>
+              <td>+254 117 689 283</td>
+              <td>david.wambua@example.com</td>
+            </tr>
+          </table>
+          <br>
+          <body>
+          
+              <h2>Registration Form</h2>
+          
+              <!-- Registration Form -->
+              <form action="submit_form.php" method="post">
+                  
+                  <!-- Name Field -->
+                  <label for="name">Full Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+          
+                  <!-- Email Field -->
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+          
+                  <!-- Password Field -->
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter a strong password" required minlength="6"><br><br>
+          
+                  <!-- Date of Birth -->
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob" required><br><br>
+          
+                  <!-- Gender Selection (Radio Buttons) -->
+                  <label>Gender:</label><br>
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label>
+                  
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+          
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label><br><br>
+          
+                <!-- Country Selection (Dropdown) -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected>Select your country</option>
+                  <option value="usa">USA</option>
+                  <option value="uk">UK</option>
+                  <option value="canada">Canada</option>
+                  <option value="australia">Australia</option>
+                  <option value="india">India</option>
+                </select><br><br>
+          
+                <!-- Interests (Checkboxes) -->
+                <label>Interests:</label><br>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+          
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+          
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br><br>
+          
+                <!-- Terms and Conditions -->
+                <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                </label><br><br>
+          
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>  
+        </body>
+    </html>
